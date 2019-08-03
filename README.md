@@ -1,7 +1,7 @@
 # FF_NinjaIt
 Very small utility to support Ninja characters into Final Fantasy XIV
 
-#cs ----------------------------------------------------------------------------
+ ----------------------------------------------------------------------------
 
  AutoIt Version: 3.3.14.5
  Author: Elwe Thor
@@ -14,7 +14,7 @@ Very small utility to support Ninja characters into Final Fantasy XIV
 	element, Ten, Chi, and Jin, have a cast time of 0.5s (up to FFXIV 5.0)
 
 
-___TECH: HOW IT WORKS IN FF___
+### TECH: HOW IT WORKS IN FF
 
 	 To make NinjaIt working for you, in FF's PvE setup (PvP setup DON'T need
 	it) you must:
@@ -43,24 +43,24 @@ ___TECH: HOW IT WORKS IN FF___
 
 		Each fake-macro (nearly-empty macro) will be like that
 		.----------------------------------------.
-		| (icon) | NINfuma (*)					 |
+		| (icon) | NINfuma (*)			 |
 		|----------------------------------------|
-		|/micon "Fuma Shuriken"					 |
+		|/micon "Fuma Shuriken"			 |
 		'----------------------------------------'
 		(*) the name is an example only: you can use whatever you prefer
 
 		.----------------------------------------.
-		| (icon) | NINkaton 					 |
+		| (icon) | NINkaton 			 |
 		|----------------------------------------|
-		|/micon "Katon"					 		 |
+		|/micon "Katon"		 		 |
 		'----------------------------------------'
 
 		.----------------------------------------.
-		| (icon) | NINraiton 					 |
+		| (icon) | NINraiton 			 |
 		|----------------------------------------|
-		|/micon "Raiton"				 		 |
+		|/micon "Raiton"			 |
 		'----------------------------------------'
-		etc.
+		etc. (yes, next is Hyoton, then Huton, etc.)
 
 		 I suggest to place the (new) combos buttons outside the "most wanted" area
 		(my most-wanted area is all around the left hand) as you won't have to press
@@ -77,11 +77,14 @@ ___TECH: HOW IT WORKS IN FF___
 		 with proper timings, ending with the Ninjutsu mudra to unleash it.
 
 
-___(personal mumbles, rants, motivation explanation, blablabla: you can jump over it)___
+### (personal mumbles, rants, non-tech motivation explanation, blablabla: you can jump over it)
 
 Author's Note: so WHY I wrote this little automation?
+
 	 To circumvent FinalFantasy anti-cheat checks? No
+	 
 	 To "illegally empower" a Ninja above all other classes/jobs? No
+	 
 	 It's mostly 'cause of my very scarce memory: into a Ninja realtime fight,
 	generally seen, in dungeons or raids, one MUST follow the party main strategy,
 	supporting the tank(s), avoiding to pull mobs, and doing the many chores and
@@ -106,9 +109,10 @@ Author's Note: so WHY I wrote this little automation?
 	 - avoiding the healer have to share his attention to me
 	 - doing the max possible damage in the min possible time
 	 - keeping an eye to the GCD (Global CoolDown) and interleaving the actions with
-		independent CDs to burst the average damage dealt
+	   independent CDs to burst the average damage dealt
 	 - trying to self heal, if needed
 	 - taking care of the adds, if possible
+	 
 	 all this in realtime
 
 	 at a given moment my CPU thinks "ah, wonderful, time to Huton, then Suiton"
@@ -147,16 +151,24 @@ Author's Note: so WHY I wrote this little automation?
 
 		Elwe Thor,	August 2019
 
-___Changelog___
+### Changelog
+
 20190802 - 1.0.1.6
+
 .6 + Splash screen
+
 .5 + mudra functions with integrated randomized timers
+
 .4 + compiler-time version handling (pragma)
+
 .3 + tech hot-to
+
 .2 * name change Ninjutsu -> NinjaIt to better express my gratitude to AutoIt :)
+
 .1 + keypress randomizer, to walk around the anti-cheat
 
 20190801 - 1.0.0.0
+
 .0 + initial "testing" release: only Fuma shuriken works, 'cause of FF anti-cheat
 
-#ce ----------------------------------------------------------------------------
+ ----------------------------------------------------------------------------
