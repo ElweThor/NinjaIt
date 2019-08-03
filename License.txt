@@ -1,0 +1,14 @@
+This work is licensed under the Creative Commons Attribution-NonCommercial-ShareAlike 4.0 International License (CC BY-NC-SA 4.0).
+To view a copy of this license, visit http://creativecommons.org/licenses/by-nc-sa/4.0/.
+
+Author's note: why I forbid commercial use
+
+ First of all, it's such a minimal, terribly small project, that I could be extremely surprised if one in the world finds a way
+to make it a commercial product.
+ Less rare could be to include my micro(nano?)project into other commercial ones as a feature: this is exactly what I don't like to
+happen as, in Final Fantasy, "external commercial projects" usually means BOTs (cheats) programs rented for money, which are
+completely against FF's ToS, they fight them, and I don't want my name associated to such things.
+
+ Thanks for understanding
+ 
+  Elwe
