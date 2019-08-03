@@ -1,0 +1,17 @@
+
+   Ten	|  Chi	|  Jin	|	Mudra			Element		Target		Power		CoolDown	Add. effects
+		|		|		|
+	1 -------------------->	Fuma shuriken	none		single		280			20s
+		|		|		|
+	2 <----	1			-->	Katon			fire		area		250			20s
+		|		|		|
+	1 ----> 2 ------------> Raiton			energy		single		400			20s
+		|		|		|
+			1 -----	2 ----> Hyoton			ice			single		140			20s			BIND (in place)
+		|		|		|
+	3 <----	2 <----	1	--> Huton			air			self		0			70s			+15% speed
+		|		|		|
+	2 ----> 3 -	<--	1	-->	Doton			ground		area		45 x 24s	20s			HEAVY +40%
+		|		|		|
+	1 ----> 2 ----> 3 ----> Suiton			water		single		130			20s			HIDE: Allows execution of weaponskills which require the effect of Hide, without being under that effect
+		|		|		|
