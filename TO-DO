@@ -1,0 +1,3 @@
+- solve the lack of Splash Screen
+- implement the configurability by textfile: at the moment it's hotwired in the code
+- add graphics in Docs, to better explain how to configure it in FF: fake-macros, buttons, etc.
