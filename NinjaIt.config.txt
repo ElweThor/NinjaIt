@@ -1,0 +1,91 @@
+#
+# NinjaIt Configuration File
+#
+# This file must reside in the same directory (folder) as the program's itself.
+#
+# Every line starting with "#", empty or completely blank (filled by " " only)
+#will be seen as a comment.
+#
+# Configuration is done in <element> = <value> couples
+# All elements have an hardcoded default, which is shown along with the definition
+# This means you don't need to re-define defaults, if you're well with them:
+#define the differences (overrides) only.
+#
+# e.g. Fuma key is defined as:
+#
+#FumaKey = "^1"
+#
+# (CTRL+1): if this suit your needs, leave it this way. If you need to re-define
+#it, maybe as ALT+a (always use lowercase) just uncomment it's definition (by
+#removing the "#" in front) and change it. You'll have to restart the program,
+#to make it read the new configuration.
+#
+# Remember that, to define a key which uses alternate ones (CTRL, ALT or SHIFT),
+#you >MUST< use AutoIt compatible symbols:
+#
+# CTRL = ^
+# Alt = !
+# SHIFT = +
+# Win = #
+#
+# You can even use parenthesized symbols, as below:
+#
+# {LALT]/{RALT} = left and right Alt keys
+# {LCTRL}/{RCTRL} = left and right CTRL keys
+# {LSHIFT}/{RSHIFT} = left and right Shift keys
+#
+# See a longer list here: https://www.autoitscript.com/autoit3/docs/functions/Send.htm
+#
+
+#------------------------------------------------------------------------------
+#
+# Keys
+#
+
+# Toggle Key: it's the key you will use to switch the whole utility on/off
+#
+#toggleKey = "^!{F5}"
+
+# Fuma Shuriken
+#
+#fuma = "^1"
+
+# Katon
+#
+#katon = "^2"
+
+# Raiton
+#
+#raiton = "^3"
+
+# Hyoton
+#
+#hyoton = "^4"
+
+# Huton
+#
+#huton = "^5"
+
+# Doton
+#
+#doton = "^6"
+
+# Suiton
+#
+#suiton = "^7"
+
+# Splash Screen (at start)
+#
+# Show splash screen at start? true | false
+#
+#splash = true
+#
+# The file can be elsewhere: if you enter the filename only, you must put it in the
+#same directory (folder) as the program.
+#
+#splashFile = "NinjaIt.jpg"
+#
+# Splashfile width and eight: if you change the image, update these 2 parameters as well
+#
+#splashWidth = 870
+#splashHeight = 870
