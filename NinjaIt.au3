@@ -18,7 +18,7 @@
 
 #ce ----------------------------------------------------------------------------
 
-#pragma compile(FileVersion, 1.1.1.1, 1.0.2.9_20190805)
+#pragma compile(FileVersion, 1.0.2.9_20190805)
 #pragma compile(InternalName, "NinjaIt")
 #pragma compile(LegalCopyright, "(C)2019 Elwe Thor")
 #pragma compile(ProductName, NinjaIt)
@@ -59,7 +59,7 @@ Global Const $configFile = "NinjaIt.config.txt"		; config file's name
 ; the system can compare them... and temporarily "locks" Ninjutsu
 ;  A solution is to add a random delta to make the delays all different
 Global $rmin = 10, $rMAX = 150, $giveInt = 1		; randomizer's values: min time to add 10 ms, max 150 ms, give an int, not a float
-ReadConfig()										; try reading the config files for (possible) overrides
+if(not ReadConfig()) Then Exit						; try reading the config files for (possible) overrides
 
 SplashImageOn("", _WinAPI_GetProcessWorkingDirectory & $splashFile, $splashWidth, $splashHeight, (_WinAPI_GetWindowWidth/2-$splashWidth/2), (_WinAPI_GetWindowHeight/2-$splashHeight/2),$DLG_NOTITLE)
 ToolTip("Ninjutsu helper READY" & @CRLF & " press " & $togKeysShort & " keys to activate")
@@ -227,13 +227,14 @@ Func ReadConfig()
 		Else
 			while(Not @error)						; read 'till EoF
 				$fline = FileReadLine($hFO)			; read 1 (next) line from line 1
+				ToolTip("INIT > read > " & $fline)
 				$fline = StringStripWS($fline, 8)
 				if(StringLeft($fline, 1) = "#" or $fline = "") Then ; comment or empty line
 				Else
 					$pline = StringSplit($fline, "=")
-					if(not @error And $pline(0) = 2) Then	; if there is no error, splitting, and elements are 2
-						$element = $pline(1)
-						$value = $pline(2)
+					if(not @error And $pline[0] = 2) Then	; if there is no error, splitting, and elements are 2
+						$element = $pline[1]
+						$value = $pline[2]
 						Select
 							Case $element = "toggleKey"
 								$togKeysShort = $value
@@ -259,6 +260,8 @@ Func ReadConfig()
 								$splashWidth = Number($value)
 							Case $element = "$splashHeight"
 								$splashHeight = Number($value)
+							Case $element = "endconfig"
+								Return True
 						EndSelect
 						Else
 						MsgBox($MB_SYSTEMMODAL, "", "INIT > read > An error occurred when parsing config line@CRLF" & $fline)
@@ -266,6 +269,7 @@ Func ReadConfig()
 					EndIf
 				EndIf
 			WEnd
+			FileClose($hFO)
 		EndIf
 	Else
 		ToolTip("INIT > reading config > An error occurred when testing the file presence.@CRLF Working with defaults only")

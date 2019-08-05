@@ -89,3 +89,6 @@
 #
 #splashWidth = 870
 #splashHeight = 870
+
+# explicit EoF
+endconfig = true
