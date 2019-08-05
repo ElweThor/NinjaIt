@@ -151,24 +151,4 @@ Author's Note: so WHY I wrote this little automation?
 
 		Elwe Thor,	August 2019
 
-### Changelog
-
-20190802 - 1.0.1.6
-
-.6 + Splash screen
-
-.5 + mudra functions with integrated randomized timers
-
-.4 + compiler-time version handling (pragma)
-
-.3 + tech hot-to
-
-.2 * name change Ninjutsu -> NinjaIt to better express my gratitude to AutoIt :)
-
-.1 + keypress randomizer, to walk around the anti-cheat
-
-20190801 - 1.0.0.0
-
-.0 + initial "testing" release: only Fuma shuriken works, 'cause of FF anti-cheat
-
  ----------------------------------------------------------------------------
